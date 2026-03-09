@@ -16,9 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-// Used to set octave to MI_OCT_0
-extern midi_config_t midi_config;
-
 // Initial velocity value (avoid using 127 since it is used as a special number in some sound sources.)
 #define MIDI_INITIAL_VELOCITY 117
 
@@ -77,7 +74,8 @@ void oledkit_render_info_user(void) {
 #endif
 
 void keyboard_post_init_user(void) {
-    //  Set otave to MI_OCT_0
-    midi_config.octave = MI_OCT_0 - MIDI_OCTAVE_MIN;
+#ifdef MIDI_ADVANCED
+    //  Set octave to MI_OC0
+    midi_config.octave = MI_OC0 - MIDI_OCTAVE_MIN;
+#endif
 };
-
