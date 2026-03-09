@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 4
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
 #define TAP_CODE_DELAY 5
 
