@@ -56,9 +56,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [4] = LAYOUT_universal(
     TO(0)    , MI_F3    , MI_Fs3   , MI_G3    , MI_Gs3   , MI_A3    ,                                         MI_E4    , MI_F4    , MI_Fs4   , MI_G4    , MI_Gs4   , _______  ,
-    _______  , MI_C3    , MI_Cs3   , MI_D3    , MI_Ds3   , MI_E3    ,                                         MI_As3   , MI_B3    , MI_C4    , MI_Cs4   , MI_D4    , _______  ,
-    _______  , MI_C     , MI_Cs    , MI_D     , MI_Ds    , MI_E     ,                                         MI_F     , MI_Fs    , MI_G     , MI_Gs    , MI_A     , _______  ,
-                  _______  , _______  , _______  ,         _______  , _______  ,                   MI_OCTU  , MI_OCTD  , _______       , _______  , _______
+    _______  , MI_C3    , MI_Cs3   , MI_D3    , MI_Ds3   , MI_E3    ,                                         MI_As3   , MI_B3    , MI_C4    , MI_Cs4   , MI_D4    , MI_MODU  ,
+    _______  , MI_C     , MI_Cs    , MI_D     , MI_Ds    , MI_E     ,                                         MI_F     , MI_Fs    , MI_G     , MI_Gs    , MI_A     , MI_MODD  ,
+                  MI_AOFF  , MI_SUST  , MI_VELD  ,         MI_VELU  , MI_VL10  ,                   MI_OCTU  , MI_OCTD  , _______       , _______  , _______
   ),
 };
 // clang-format on
