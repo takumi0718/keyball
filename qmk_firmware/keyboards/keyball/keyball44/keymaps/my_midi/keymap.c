@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TO(4)          , KC_Q          , KC_W          , KC_E          , KC_R          , KC_T          ,                            KC_Y          , KC_U          , KC_I          , KC_O          , KC_P            , KC_BSLS        ,
     LCTL_T(KC_ESC) , LSA_T(KC_A)   , LSG_T(KC_S)   , LALT_T(KC_D)  , LGUI_T(KC_F)  , LCTL_T(KC_G)  ,                            RCTL_T(KC_H)  , RGUI_T(KC_J)  , RALT_T(KC_K)  , RSG_T(KC_L)    , LT(1, KC_SCLN)  , LT(3, KC_MINS) ,
     KC_LGUI        , LSFT_T(KC_Z)  , KC_X          , KC_C          , KC_V          , KC_B          ,                            KC_N          , KC_M          , KC_COMM       , KC_DOT        , RSFT_T(KC_SLSH) , KC_RGUI        ,
-                    LALT_T(KC_LNG2), LSFT_T(KC_TAB), LT(1, KC_ENT) , LT(2, KC_SPC) , LT(3, KC_BSPC),                 KC_BSPC, KC_ENT        , RCTL_T(KC_LNG2), KC_RALT       , HYPR_T(KC_LNG1)
+                    LALT_T(KC_LNG2), LSFT_T(KC_TAB), LT(1, KC_ENT) , LT(2, KC_SPC) , LT(3, KC_BSPC),                 KC_BSPC, LT(2, KC_ENT)   , RCTL_T(KC_LNG2), KC_RALT       , HYPR_T(KC_LNG1)
   ),
 
   [1] = LAYOUT_universal(
@@ -41,9 +41,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [2] = LAYOUT_universal(
-    _______  , S(KC_5)  , KC_7     , KC_8     , KC_9     , S(KC_8)   ,                                      C(KC_LEFT), C(KC_DOWN), C(KC_UP)  , C(KC_RIGHT), KC_HOME  , _______  ,
+    _______  , S(KC_5)  , KC_7     , KC_8     , KC_9     , S(KC_8)   ,                                      KC_UNDO   , KC_CUT    , KC_COPY   , KC_PSTE    , KC_HOME  , _______  ,
     _______  , S(KC_6)  , KC_4     , KC_5     , KC_6     , KC_MINS   ,                                      KC_LEFT   , KC_DOWN   , KC_UP     , KC_RIGHT   , KC_PGUP  , _______  ,
-    _______  , KC_SLSH  , KC_1     , KC_2     , KC_3     , S(KC_EQL) ,                                      G(KC_LEFT), G(KC_DOWN), G(KC_UP)  , G(KC_RIGHT), KC_PGDN  , _______  ,
+    _______  , KC_SLSH  , KC_1     , KC_2     , KC_3     , S(KC_EQL) ,                                      OS_LSFT   , OS_LCTL   , OS_LALT   , OS_LGUI    , KC_PGDN  , _______  ,
                   KC_0     , KC_EQL   , _______  ,         _______   , _______  ,                 _______   , _______   , _______       , _______   , KC_END
   ),
 
